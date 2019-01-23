@@ -28,4 +28,7 @@ ErrorHandling.showUnhandledException@https://srvex1.gsi.de/ecp/15.1.1261.39/scri
 
 
 ## Zertifikate
+#### Open SSL Pfad
+C:\Users\skraus\AppData\Local\OpenSSL-Win32\bin
+#### Zertifikatspfad
 P:\gsimgr\ManageArea\Zertifikate\20190122_OpenSSLtest
