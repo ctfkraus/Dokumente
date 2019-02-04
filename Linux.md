@@ -1,11 +1,7 @@
 # Notizen Linux Victor
 
 ### Fragen
-- muss ich ein Git Paket installieren
-- in mageia habe ich kein sudo (nicht in sudo-Datei)
-- wie bekomme ich lokale Kopie von:
-https://github.com/ctfkraus/Dokumente.git
-in /Users/skraus/Documents/Notizen
+
 
 ### Editoren
 - Atom - Text Editor - nur Grafisch
