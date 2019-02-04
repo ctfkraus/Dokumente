@@ -1,4 +1,4 @@
-# Notizen Linux Victor
+# Notizen Linux
 
 ### Fragen
 
