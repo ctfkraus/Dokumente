@@ -28,3 +28,4 @@
 - git add
 - git commit -m ...
 - git log
+- git remote -u origin master <remoterepository anlegen>

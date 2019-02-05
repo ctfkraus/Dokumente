@@ -16,6 +16,9 @@
 - sudo dpkg -i atom-amd64.deb (Atom installieren)
 - sudo apt --fix-broken install (fehlende Pakete nachziehen)
 history (Liste der letzen Befehle anzeigen)
+- export Editor=vim
+- echo $editor
+- mkdir <name> Verzeichnis erstellen
 
 
 ### Zeichenkodierung
