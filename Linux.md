@@ -27,3 +27,11 @@ history (Liste der letzen Befehle anzeigen)
 
 ### Markdown
 - Dillinger zum konvertieren von markdown in andere Formate
+
+### Ubuntu Befehle:
+- echo $SHELL
+- file -bi readme.md
+- sudo dpkg -i atom-amd64.deb
+- sudo apt install
+- sudo apt --fix-broken install
+- history

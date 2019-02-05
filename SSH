@@ -1,13 +1,18 @@
-SSH
+# SSH
+## Links
+Victors ssh Seite:
+https://github.com/vpenso/scripts/tree/master/docs/linux/ssh
 
-slides anschauen und Links nachlesen
+## ToDos
+- slides anschauen und Links nachlesen
+- Linux Account nutzen
+- auf LXppol einloggen - ssh skraus@lxpool.gsi.de
 
-ssh skraus@lxpool.gsi.de
-
-ssh ist Tunnel zur Zielshell
-RSA Hash fingerprint auf GSI Wiki
-.ssh/config
-man ssh ssh_config nachlesen
-CheckHostIP no
-scp zum kopieren von Dateien
-eval $(ssh-agent)    +   ssh-add ~/.ssh/id_rsa
+## Notizen:
+- ssh ist Tunnel zur Zielshell
+- RSA Hash fingerprint auf GSI Wiki
+- .ssh/config
+- man ssh ssh_config nachlesen
+- CheckHostIP no
+- scp zum kopieren von Dateien
+- eval $(ssh-agent)    +   ssh-add ~/.ssh/id_rsa
