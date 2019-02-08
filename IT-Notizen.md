@@ -1,5 +1,27 @@
 # IT
 
+## Projekte
+### Exchange 2016 Projekt
+#### Änderungen zu Exchange 2010
+- OWA Seite keine Passwortänderung mehr möglich --> So designed von MS
+- Office 365 macht ActiveSync, dadurch nur ein Konto direkt mit Exchange verbindbar. Weitere Konten nur über IMAP --> ist bei Mobile Devices jetzt schon so
+- UPN muss auf Emailadresse eingestellt sein, da sonst das Autodiscover nicht funktioniert und manche Clients nicht konfiguriert werden können.
+- Restore hat nicht alle Funktionen, nur ganze Mailboxdatenbanken können wieder hergestellt werden --> Problem bei Tivoli
+
+#### ToDos
+
+- Nachrichtenfluss --> Sendeconnectors --> ToSmartHost --> Quellservern nur alte Server, wieso?
+- Wer schickt an die Exchagne Server? --> MTAs
+- Blackberry MDM, alles umgestellt?
+-  GSI-Server auf neue Adresse umstellen, wenn sie direkt an Exchange senden
+- Mailboxmigration
+##### mit Net&Work
+- Net&Work: POP für alle standardmäßig deaktivieren
+- Net&Work: Beweissicherungsverfahren für alle 3700 Tage aktivieren als Standard für alle Postfächer / Inplacearchivierung einrichten
+- Net&Work: ist Active Sync schon bei Client Access auf den neuen Server geändert?
+- Net&Work: PublicFolder Mailboxmigration
+- Net&Work: Alte Exchangeserver rauskonfigurieren
+
 ## Windows
 
 ### Server
@@ -11,6 +33,14 @@ Reset-ComputerMachinePassword -Server windc07 -Credential campus\winad09
 
 #### IMAP
 Test-IMapconnectivity -ClientAccessServer srvex4 -mailboxcredential (Get-Credential campus\skraus)
+
+#### Einen Knoten rauskonfigurieren
+1. Datenbank Kopien entfernen
+2. aus DAG entfernen (Witness auf SCOM)
+3. Check get-clusternode
+4. ADSI-Edit Services/MSExchange/GSI --> Einträge überprüfen
+5. Exchange Uninstall starten --> z.B. CU Update Installer
+6. Empfangsconnectoren kontrollieren
 
 ##### Umstellen der Anzahl der Verbindungen:
 Warnung:
