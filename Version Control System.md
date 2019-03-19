@@ -1,7 +1,9 @@
 # Version Control System (VCS)
+
 ## Links
 Victors Git:
 https://github.com/vpenso/scripts/blob/master/docs/code/git.md
+
 ### Allgemeines
 - Versionsverwaltung von Dateien in einer durchsuchbaren Baumstruktur
 - Verfügbarkeit über verschiedene Standorte hinweg und mit vielen anderen Personen gleichzeitig nutzbar
@@ -31,3 +33,19 @@ https://github.com/vpenso/scripts/blob/master/docs/code/git.md
 - git commit -m ...
 - git log
 - git remote -u origin master <remoterepository anlegen>
+
+### Bis jetzt umgesetzt
+ToDo! (code makieren nachschauen und umsetzen)
+- github Repository mit [git clone] lokal gespeichert
+   - dazu git installiert incl. Xcode
+   - den Pfad kann man bei github kopieren
+   - für lesen braucht man kein github PW, aber sudo ist nötig
+- lokal Dateien in den Working Tree kopiert und mit [git add + git commit] zum lokalen Repository hinzugefügt
+   - [git commit] will Kommentar
+   - in ubuntu ging dabei Nano auf
+   - gegoogelt, wie nano grob funktioniert
+   - ToDo! Umstellen auf nvim - lokalen Pfad in Ubuntu und OSX umstellen - WIE?
+- mit [git push] das Repository auf github aktualisiert
+   - dafür ist der Account von github nötig, um dort schreiben zu können
+- mit [git pull] ein geklontes Repository unter OSX und eins unter Ubuntu aktualisiert
+   - [git pull] braucht auch sudo rechte
